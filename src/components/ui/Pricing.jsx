@@ -53,7 +53,7 @@ function Pricing6() {
           <h2 className="mt-6 text-3xl font-normal text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
             Invest in CreatoUI Today
           </h2>
-          <p className="max-w-xl mt-6 text-lg font-normal text-gray-400 sm:mt-8">
+          <p className="max-w-xl mt-6 text-lg font-normal text-gray-200 sm:mt-8">
             Unlock the power of modern UI components with CreatoUI's premium features. 
             Secure, scalable, and designed for developers and designers alike.
           </p>
@@ -74,7 +74,7 @@ function Pricing6() {
 
           <div className="relative overflow-hidden border rounded-2xl bg-base-900 bg-opacity-80 filter backdrop-blur-lg border-base-900">
             <div className="px-10 py-8">
-              <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-3 lg:gap-16">
                 <div className="lg:pr-16 xl:pr-24 lg:col-span-2">
                   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                     {features.map(({ Icon, title, description }, index) => (
@@ -89,7 +89,7 @@ function Pricing6() {
                           <p className="text-lg font-normal text-white">
                             {title}
                           </p>
-                          <p className="mt-px text-sm font-normal text-gray-500">
+                          <p className="mt-px text-sm font-normal text-gray-300">
                             {description}
                           </p>
                         </div>
@@ -101,8 +101,8 @@ function Pricing6() {
                 <div className="w-48 h-px mx-auto bg-white bg-opacity-10 lg:hidden"></div>
 
                 <div className="text-center border-white lg:border-l lg:pl-16 xl:pl-24 border-opacity-10">
-                  <p className="text-6xl font-normal text-white">$ 99</p>
-                  <p className="mt-2 text-base font-normal text-gray-400">
+                  <p className="text-4xl sm:text-5xl font-normal text-white">$ 99</p>
+                  <p className="mt-2 text-base font-normal text-gray-300">
                     Lifetime Access to CreatoUI
                   </p>
                   <div className="max-w-xs mx-auto mt-6">
@@ -114,7 +114,7 @@ function Pricing6() {
                       Buy now <RiArrowRightLine className="ml-2" />
                     </button>
                   </div>
-                  <p className="mt-4 text-sm font-normal text-gray-400">
+                  <p className="mt-4 text-sm font-normal text-gray-300">
                     30 Days Money-back Guarantee
                   </p>
                 </div>

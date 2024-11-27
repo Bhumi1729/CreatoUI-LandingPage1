@@ -3,29 +3,29 @@ import { FaDownload } from "react-icons/fa";
 import { HiOutlineBars3 } from "react-icons/hi2";
 
 const commonStyles = {
-  header: "relative py-4 md:py-6 bg-black text-white",  // Updated to black background and white text
+  header: "relative py-4 md:py-6 bg-black text-white",
   container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  logo: "flex items-center text-3xl font-bold text-white",  // Styling for the text-based logo
+  logo: "flex items-center text-3xl font-bold text-white",
   menuIcon: "w-7 h-7",
   navLink:
-    "text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2", // White text for nav links
+    "text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2",
   button:
     "inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 font-pj",
-  primaryButton: "bg-white hover:bg-gray-200",  // White background with black text
+  primaryButton: "bg-white hover:bg-gray-200",
   secondaryButton:
-    "bg-transparent border-white text-white hover:bg-white hover:text-black",  // Default text color is white, changes to black on hover
+    "bg-transparent border-white text-white hover:bg-white hover:text-black",
   sectionTitle:
-    "text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#3a8fd3] via-[#9b59b6] to-[#8e44ad] sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj",  // New bluish-purplish gradient applied here
+    "text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#3a8fd3] via-[#9b59b6] to-[#8e44ad] sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj",
   textAccent: "relative inline-flex sm:inline",
   textHighlight:
-    "bg-gradient-to-r from-[#3a8fd3] via-[#9b59b6] to-[#8e44ad] blur-lg filter opacity-30 w-full h-full absolute inset-0",  // Updated gradient for text highlight
+    "bg-gradient-to-r from-[#3a8fd3] via-[#9b59b6] to-[#8e44ad] blur-lg filter opacity-30 w-full h-full absolute inset-0",
   profilePic: "inline-block rounded-full w-14 h-14 ring-2 ring-white",
   gridImg: "w-full mx-auto scale-110",
 };
 
 function Hero22() {
   return (
-    <div className="relative bg-black">  {/* Black background for entire page */}
+    <div className="relative bg-black">
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
         <img
           className="w-auto h-full"
@@ -39,7 +39,6 @@ function Hero22() {
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
               <a href="#" title="CreatoUI Home" className={commonStyles.logo}>
-                {/* Replaced the logo image with text */}
                 <span>CreatoUI</span>
               </a>
             </div>
@@ -118,7 +117,8 @@ function Hero22() {
                 </div>
               </div>
 
-              <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
+              {/* Buttons Section */}
+              <div className="mt-8 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-5 lg:justify-start lg:mt-12">
                 <a
                   href="#"
                   title="Get Started"
@@ -134,9 +134,7 @@ function Hero22() {
                   className={`${commonStyles.button} ${commonStyles.secondaryButton}`}
                   role="button"
                 >
-                  <FaDownload
-                    className="w-5 h-5 text-gray mr-2 transition-colors duration-300 ease-in-out "
-                  />
+                  <FaDownload className="w-5 h-5 mr-2 transition-colors duration-300 ease-in-out" />
                   Download for Free
                 </a>
               </div>

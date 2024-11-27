@@ -41,11 +41,11 @@ export function AnimatedTestimonialsDemo() {
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center py-20">
-      <div className="text-center mb-16">
-        <h1 className="text-6xl font-extrabold animate__animated animate__fadeInUp text-white">
+      <div className="text-center mb-16 px-4 sm:px-8">
+        <h1 className="text-4xl sm:text-6xl font-extrabold animate__animated animate__fadeInUp text-white">
           What Our Clients Say
         </h1>
-        <p className="text-lg text-gray-400 mt-4">
+        <p className="text-lg sm:text-xl text-gray-400 mt-4 max-w-2xl mx-auto">
           Discover how CreatoUI has transformed the way developers and designers create stunning user interfaces.
         </p>
       </div>
